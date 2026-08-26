@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - English Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🌍 English Learning</h1>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#" onclick="logout()">Chiqish</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="test-container">
+            <div class="test-header">
+                <h2 id="testTitle"></h2>
+                <div class="timer">
+                    <span id="timeRemaining"></span>
+                </div>
+            </div>
+
+            <div class="test-content">
+                <form id="testForm">
+                    <div id="questionsContainer"></div>
+                    <button type="submit" class="btn btn-primary btn-lg">Testni Yuborish</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 English Learning Platform. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="js/test.js"></script>
+</body>
+</html>
