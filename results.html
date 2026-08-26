@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natijalar - English Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🌍 English Learning</h1>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#" onclick="logout()">Chiqish</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="results-container">
+            <h2>Test Natijalaringiz</h2>
+
+            <div class="result-card">
+                <div class="result-header">
+                    <h3 id="testName"></h3>
+                    <span id="grade" class="grade-badge"></span>
+                </div>
+
+                <div class="result-stats">
+                    <div class="stat">
+                        <h4>✅ To'g'ri Javoblar</h4>
+                        <p id="correctCount" class="stat-value">0</p>
+                    </div>
+                    <div class="stat">
+                        <h4>❌ Noto'g'ri Javoblar</h4>
+                        <p id="incorrectCount" class="stat-value">0</p>
+                    </div>
+                    <div class="stat">
+                        <h4>📈 Foiz</h4>
+                        <p id="percentage" class="stat-value">0%</p>
+                    </div>
+                    <div class="stat">
+                        <h4>🎯 Ballar</h4>
+                        <p id="points" class="stat-value">0</p>
+                    </div>
+                </div>
+
+                <div class="result-details">
+                    <h4>Javoblar Tahlili:</h4>
+                    <div id="answersList"></div>
+                </div>
+
+                <div class="result-feedback">
+                    <h4>O'qituvchining Fikri:</h4>
+                    <p id="feedback">-</p>
+                </div>
+
+                <div class="result-actions">
+                    <a href="dashboard.html" class="btn btn-primary">Dashboardga qaytish</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 English Learning Platform. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="js/results.js"></script>
+</body>
+</html>
