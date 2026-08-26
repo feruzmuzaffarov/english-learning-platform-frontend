@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - English Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🌍 English Learning</h1>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="tests.html">Testlar</a></li>
+                <li><a href="#" onclick="logout()">Chiqish</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="dashboard-header">
+            <h2>Xush kelibsiz, <span id="userName"></span>!</h2>
+            <p>Sizning Telegram Chat ID: <code id="chatId">-</code></p>
+        </div>
+
+        <div class="dashboard-content">
+            <section class="assignments-section">
+                <h3>📝 Sizning Vazifalaringiz</h3>
+                <div id="assignmentsList" class="assignments-list">
+                    <p>Yuklanyapti...</p>
+                </div>
+            </section>
+
+            <section class="results-section">
+                <h3>📊 Natijalaringiz</h3>
+                <div id="resultsList" class="results-list">
+                    <p>Yuklanyapti...</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 English Learning Platform. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
