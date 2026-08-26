@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirish - English Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🌍 English Learning</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="login.html">Kirish</a></li>
+                <li><a href="register.html">Ro'yxatdan o'tish</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Platformaga Kirish</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Parol:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div id="errorMessage" class="error-message"></div>
+
+                <button type="submit" class="btn btn-primary">Kirish</button>
+            </form>
+
+            <p>Ro'yxatdan o'tmaganmisiz? <a href="register.html">Bu yerda ro'yxatdan o'ting</a></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 English Learning Platform. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
